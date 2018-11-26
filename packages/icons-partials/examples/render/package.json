@@ -1,0 +1,15 @@
+{
+  "name": "render",
+  "private": true,
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test-render": "node index.js"
+  },
+  "dependencies": {
+    "@carbon/icons-handlebars": "file:../../../icons-handlebars",
+    "@carbon/icons-partials": "file:../..",
+    "handlebars": "^4.0.12",
+    "handlebars-helpers": "^0.10.0"
+  }
+}

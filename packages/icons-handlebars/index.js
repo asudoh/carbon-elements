@@ -1,6 +1,7 @@
 'use strict';
 
 const CarbonIcons = require('@carbon/icons');
+const registerPartials = require('./partials');
 const {
   formatAttributes,
   getAttributes,
@@ -23,7 +24,8 @@ function iconHelper(name, { hash = {} } = {}) {
   );
 }
 
-module.exports = function register({ handlebars }) {
+exports = module.exports = function register({ handlebars }) {
   return handlebars.registerHelper('carbon-icon', iconHelper);
 };
 exports.iconHelper = iconHelper;
+exports.registerPartials = registerPartials;
